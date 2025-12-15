@@ -4,7 +4,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "viveknshet112/maven_app"
+        IMAGE_NAME = "viveknshet112/jen_docker_maven"
     }
 
     stages {
@@ -47,3 +47,4 @@ pipeline {
         failure { echo "❌ Pipeline failed" }
     }
 }
+
