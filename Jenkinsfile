@@ -10,7 +10,9 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/1ms24mc112-vivek/maven_app.git'
+                git branch: 'main', 
+                    url: 'https://github.com/1ms24mc112-vivek/maven_app.git',
+                    credentialsId: 'github-pat' // GitHub PAT credentials
             }
         }
 
