@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main', 
-                    url: 'https://github.com/1ms24mc112-vivek/maven_app.git',
+                    url: 'https://github.com/1ms24mc112-vivek/jen-docker-Maven.git',
                     credentialsId: 'github-PAT' // GitHub PAT credentials
             }
         }
@@ -47,5 +47,6 @@ pipeline {
         failure { echo "❌ Pipeline failed" }
     }
 }
+
 
 
