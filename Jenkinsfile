@@ -12,7 +12,7 @@ pipeline {
             steps {
                 git branch: 'main', 
                     url: 'https://github.com/1ms24mc112-vivek/maven_app.git',
-                    credentialsId: 'github-pat' // GitHub PAT credentials
+                    credentialsId: 'github' // GitHub PAT credentials
             }
         }
 
@@ -47,3 +47,4 @@ pipeline {
         failure { echo "❌ Pipeline failed" }
     }
 }
+
